@@ -15,3 +15,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.primary-btn {
+  padding: 10px 32px;
+  border: 1px solid #f5db8b;
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  color: #303030;
+  transition: 0.5s all;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.primary-btn::before {
+  position: absolute;
+  content: "";
+  opacity: 1;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #303030;
+  clip-path: inset(0 0 0 0);
+  background: #f5db8b;
+  transition: 0.5s all;
+}
+.primary-btn:hover:before {
+  clip-path: inset(0 0 0 100%);
+}
+.primary-btn:hover {
+  color: #f5db8b;
+}
+.white-btn {
+  border: 1px solid #fff;
+  color: #303030;
+}
+.white-btn::before {
+  color: #303030;
+  background: #fff;
+}
+.white-btn:hover:before {
+  clip-path: inset(0 0 0 100%);
+}
+.white-btn:hover {
+  color: #fff;
+}
+.product-card figure .front-img {
+  opacity: 1;
+  display: block;
+  transition: all 0.35s ease-in-out;
+}
+.product-card figure:hover .front-img {
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+}
+.product-card figure .back-img {
+  opacity: 0;
+  display: block;
+  transition: all 0.35s ease-in-out;
+}
+.product-card figure:hover .back-img {
+  opacity: 1;
+  transition: all 0.35s ease-in-out;
+}
+.product-card span {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.35s ease-in-out;
+  color: #595959;
+  display: inline-block;
+}
+
+.product-card:hover span {
+  opacity: 1;
+}

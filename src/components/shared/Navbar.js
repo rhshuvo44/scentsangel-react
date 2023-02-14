@@ -40,9 +40,9 @@ const Navbar = ({ children }) => {
           </Link>
         </div>
         <div class="navbar-end gap-5 items-center">
-          <a href="login.html" class="hidden lg:block">
+          <Link to="/login" class="hidden lg:block">
             <AiOutlineUser className="text-2xl text-[#303030]" />
-          </a>
+          </Link>
           <div class="dropdown dropdown-end">
             <button class="">
               <AiOutlineSearch className="text-2xl text-[#303030]" />

@@ -7,86 +7,88 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = ({ children }) => {
   return (
     <>
-      <div class="top-hedader py-3 text-center bg-[#FCE7A8]">
-        <p class="text-[#303030] font-bold text-[11px] uppercase tracking-wide leading-[18px]">
-          Complimentary Samples With Any Full Bottle Purchase.
-        </p>
-      </div>
-      {/* <!-- navbar start --> */}
-      <div class="navbar bg-base-100 px-5 lg:px-20">
-        <div class="navbar-start">
-          {/* mobile side menu  */}
-          <div class="lg:hidden">
-            <label htmlFor="mobile-menu">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block w-6 h-6 stroke-current"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </label>
-          </div>
-        </div>
-        <div class="navbar-center">
-          <Link to="/">
-            <img src={logo} alt="" class="max-w-[180px]" />
-          </Link>
-        </div>
-        <div class="navbar-end gap-5 items-center">
-          <Link to="/login" class="hidden lg:block">
-            <AiOutlineUser className="text-2xl text-[#303030]" />
-          </Link>
-          <div class="dropdown dropdown-end">
-            <button class="">
-              <AiOutlineSearch className="text-2xl text-[#303030]" />
-            </button>
-            <div
-              tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-none w-52"
-            >
-              <input
-                class="w-full"
-                type="search"
-                name=""
-                id=""
-                placeholder="Serach"
-              />
-            </div>
-          </div>
-          <div class="dropdown dropdown-end">
-            <label tabindex="0" class="cursor-pointer">
-              <BsBag className="text-2xl text-[#303030]" />
-            </label>
-            <div
-              tabindex="0"
-              class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
-            >
-              <div class="card-body">
-                <span class="font-bold text-lg">8 Items</span>
-                <span class="text-info">Subtotal: $999</span>
-                <div class="card-actions">
-                  <button class="btn btn-primary btn-block">View cart</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       {/* <!-- ----- menu bar-------- --> */}
       <div className="drawer">
         <input id="mobile-menu" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* <!-- Navbar --> */}
+          <div class="top-hedader py-3 text-center bg-[#FCE7A8]">
+            <p class="text-[#303030] font-bold text-[11px] uppercase tracking-wide leading-[18px]">
+              Complimentary Samples With Any Full Bottle Purchase.
+            </p>
+          </div>
+          {/* <!-- navbar start --> */}
+          <div class="navbar bg-base-100 px-5 lg:px-20">
+            <div class="navbar-start">
+              {/* mobile side menu  */}
+              <div class="lg:hidden">
+                <label htmlFor="mobile-menu">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    className="inline-block w-6 h-6 stroke-current"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </label>
+              </div>
+            </div>
+            <div class="navbar-center">
+              <Link to="/">
+                <img src={logo} alt="" class="max-w-[180px] p-2" />
+              </Link>
+            </div>
+            <div class="navbar-end gap-5 items-center">
+              <Link to="/login" class="hidden lg:block">
+                <AiOutlineUser className="text-2xl text-[#303030]" />
+              </Link>
+              <div class="dropdown dropdown-end">
+                <button class="">
+                  <AiOutlineSearch className="text-2xl text-[#303030]" />
+                </button>
+                <div
+                  tabindex="0"
+                  class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-none w-52"
+                >
+                  <input
+                    class="w-full"
+                    type="search"
+                    name=""
+                    id=""
+                    placeholder="Serach"
+                  />
+                </div>
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="cursor-pointer">
+                  <BsBag className="text-2xl text-[#303030]" />
+                </label>
+                <div
+                  tabindex="0"
+                  class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
+                >
+                  <div class="card-body">
+                    <span class="font-bold text-lg">8 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                      <button class="btn btn-primary btn-block">
+                        View cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="hidden lg:block">
-            <div className="w-full navbar border-b-2 border-[#e0e0e0] justify-center">
-              <div className="flex-none hidden lg:block">
+            <div className="w-full  navbar border-b-2 border-[#e0e0e0] justify-center">
+              <div className="flex-none hidden z-50 lg:block">
                 <ul className="menu menu-horizontal">
                   {/* <!-- Navbar menu content here --> */}
                   <li>
@@ -111,7 +113,7 @@ const Navbar = ({ children }) => {
                   <li tabindex="0">
                     <span
                       className="text-xs font-bold 
-                      border-b-2 mb-[-50px] border-transparent uppercase text-secondary hover:bg-transparent hover:border-b-2 hover:border-secondary"
+                      border-b-2 mb-[-50px] border-transparent uppercase text-secondary hover:bg-transparent hover:border-b-2 hover:border-secondary z-50"
                     >
                       top picks
                     </span>

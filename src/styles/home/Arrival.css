@@ -1,8 +1,10 @@
 /* arrival section start  */
+.arrival-swiper {
+  height: auto !important;
+}
 .swiper-button-next,
 .swiper-button-prev {
-  position: absolute !important;
-  top: 50% !important;
+  top: 30% !important;
   z-index: 10 !important;
   cursor: pointer !important;
   width: 45px !important;
@@ -19,12 +21,10 @@
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-family: swiper-icons !important;
   font-size: 20px !important;
 }
-.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-    opacity: 0 !important;
-    cursor: auto;
-    pointer-events: none;
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0 !important;
 }
 /* arrival section end  */

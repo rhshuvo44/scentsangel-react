@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import product1 from "../../assets/img/products/product3.png";
 import product2 from "../../assets/img/products/product4.jpg";
 import "../../styles/home/Arrival.css";
 import ProductCard from "../shared/ProductCard";
+
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import SectionTitle from "../shared/SectionTitle";
 const Arrival = () => {
   const products = [
@@ -94,6 +97,8 @@ const Arrival = () => {
         spaceBetween={10}
         pagination={{
           clickable: true,
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         }}
         breakpoints={{
           640: {
@@ -109,8 +114,10 @@ const Arrival = () => {
             spaceBetween: 40,
           },
         }}
-        modules={[Pagination]}
-        className="mySwiper"
+        navigation={true}
+        modules={[ Pagination, Navigation]}
+        // modules={[Pagination]}
+        className="mt-5"
       >
         {products.map((product) => (
           <SwiperSlide>

@@ -64,32 +64,3 @@ code {
 .white-btn:hover {
   color: #fff;
 }
-.product-card figure .front-img {
-  opacity: 1;
-  display: block;
-  transition: all 0.35s ease-in-out;
-}
-.product-card figure:hover .front-img {
-  opacity: 0;
-  transition: all 0.35s ease-in-out;
-}
-.product-card figure .back-img {
-  opacity: 0;
-  display: block;
-  transition: all 0.35s ease-in-out;
-}
-.product-card figure:hover .back-img {
-  opacity: 1;
-  transition: all 0.35s ease-in-out;
-}
-.product-card span {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.35s ease-in-out;
-  color: #595959;
-  display: inline-block;
-}
-
-.product-card:hover span {
-  opacity: 1;
-}

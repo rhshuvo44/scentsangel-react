@@ -1,0 +1,25 @@
+/* arrival section start  */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute !important;
+  top: 50% !important;
+  z-index: 10 !important;
+  cursor: pointer !important;
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50% !important;
+  background: #303030 !important;
+  color: #f5db8b !important;
+  box-shadow: 0 2px 10px #36363626 !important;
+  line-height: 0;
+  transform: scale(1.001) !important;
+  transition: background 0.15s ease-in-out, opacity 0.15s ease-in-out,
+    transform 0.2s ease-in-out, color 0.2s ease-in-out !important;
+  overflow: hidden !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons !important;
+  font-size: 20px !important;
+}
+/* arrival section end  */

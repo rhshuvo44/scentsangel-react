@@ -2,6 +2,7 @@ import React from "react";
 import Arrival from "../../components/home/Arrival";
 import Banner from "../../components/home/Banner";
 import Highlight from "../../components/home/Highlight";
+import NewArrival from "../../components/home/NewArrival";
 import ProductHighlight from "../../components/home/ProductHighlight";
 
 const Home = () => {
@@ -10,7 +11,8 @@ const Home = () => {
       <Banner />
       <Arrival />
       <ProductHighlight />
-      <Highlight/>
+      <Highlight />
+      <NewArrival />
     </>
   );
 };

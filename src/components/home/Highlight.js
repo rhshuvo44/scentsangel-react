@@ -1,9 +1,9 @@
 import React from "react";
+import { BsPinterest } from "react-icons/bs";
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import product6 from "../../assets/img/products/product6.jpg";
 import SectionTitle from "../shared/SectionTitle";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
-import { BsPinterest } from "react-icons/bs";
 const Highlight = () => {
   return (
     <section class="highlight p-10 lg:p-20">
@@ -57,16 +57,16 @@ const Highlight = () => {
             </ul>
           </div>
           <div class="size">
-            <span class="block text-[#303030] font-normal text-sm capitalize mb-4 tracking-wide leading-[23px]">
+            <span class="block text-secondary font-normal text-sm capitalize mb-4 tracking-wide leading-[23px]">
               size :
             </span>
-            <button class="btn btn-outline btn-sm capitalize rounded-none hover:bg-transparent hover:text-[#303030]">
+            <button class="btn btn-outline btn-sm capitalize rounded-none hover:bg-transparent hover:text-secondary">
               1.2 oz/ 35 ml
             </button>
-            <button class="btn btn-outline btn-sm capitalize rounded-none hover:bg-transparent hover:text-[#303030]">
+            <button class="btn btn-outline btn-sm capitalize rounded-none hover:bg-transparent hover:text-secondary">
               5 ml
             </button>
-            <button class="btn btn-outline btn-sm capitalize rounded-none hover:bg-transparent hover:text-[#303030]">
+            <button class="btn btn-outline btn-sm capitalize rounded-none hover:bg-transparent hover:text-secondary">
               10 ml
             </button>
           </div>
@@ -86,7 +86,7 @@ const Highlight = () => {
             </a>
           </div>
           <Link
-            class="text-[#303030] font-normal text-sm tracking-wide leading-[23px] mt-5 underline hover:no-underline ease-in duration-500"
+            class="text-secondary font-normal text-sm tracking-wide leading-[23px] mt-5 underline hover:no-underline ease-in duration-500"
             to="/"
           >
             View product details

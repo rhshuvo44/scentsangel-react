@@ -1,7 +1,6 @@
 .highlight .card-body :where(p) {
   flex-grow: 0;
 }
-
 .btn-cart {
   border: 1px solid #f5db8b;
   color: #303030;

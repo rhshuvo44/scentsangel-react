@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../../assets/img/logo.png";
 import { AiOutlineRight, AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/img/logo.png";
 
 const Navbar = ({ children }) => {
   return (
@@ -13,7 +13,7 @@ const Navbar = ({ children }) => {
         <div className="drawer-content flex flex-col">
           {/* <!-- Navbar --> */}
           <div class="top-hedader py-3 text-center bg-[#FCE7A8]">
-            <p class="text-[#303030] font-bold text-[11px] uppercase tracking-wide leading-[18px]">
+            <p class="text-secondary font-bold text-[11px] uppercase tracking-wide leading-[18px]">
               Complimentary Samples With Any Full Bottle Purchase.
             </p>
           </div>
@@ -46,11 +46,11 @@ const Navbar = ({ children }) => {
             </div>
             <div class="navbar-end gap-5 items-center">
               <Link to="/login" class="hidden lg:block">
-                <AiOutlineUser className="text-2xl text-[#303030]" />
+                <AiOutlineUser className="text-2xl text-secondary" />
               </Link>
               <div class="dropdown dropdown-end">
                 <button class="">
-                  <AiOutlineSearch className="text-2xl text-[#303030]" />
+                  <AiOutlineSearch className="text-2xl text-secondary" />
                 </button>
                 <div
                   tabindex="0"
@@ -67,7 +67,7 @@ const Navbar = ({ children }) => {
               </div>
               <div class="dropdown dropdown-end">
                 <label tabindex="0" class="cursor-pointer">
-                  <BsBag className="text-2xl text-[#303030]" />
+                  <BsBag className="text-2xl text-secondary" />
                 </label>
                 <div
                   tabindex="0"
